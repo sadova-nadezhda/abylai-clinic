@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "404" })
+  <body>
+    @@include('html/header.html', { "class": "dark" })
+
+    <main class="main">
+      <section class="page-error section-hidden">
+        <div class="container">
+          <div class="page-error__container">
+            <h1 class="page-error__title title-sm title-indent blue">404</h1>
+            <div class="page-error__txt blue">Страница не найдена</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/modal.html')
+    @@include('html/footer.html') 
+    @@include('html/foot.html')
+  </body>
+</html>

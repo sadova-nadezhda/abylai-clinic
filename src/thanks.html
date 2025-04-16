@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "Спасибо за заявку!" })
+  <body>
+    @@include('html/header.html', { "class": "dark" })
+
+    <main class="main">
+      <section class="page-thanks section-hidden">
+        <div class="container">
+          <div class="page-thanks__container">
+            <h1 class="page-thanks__title title-sm title-indent blue">Спасибо за заявку!</h1>
+            <a href="/" class="button button-pulse">Вернуться на главную</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/modal.html')
+    @@include('html/footer.html') 
+    @@include('html/foot.html')
+  </body>
+</html>

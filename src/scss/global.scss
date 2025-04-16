@@ -1,0 +1,260 @@
+@import "fonts";
+@import "vars.scss";
+@import "mixins.scss";
+
+:root {
+  --light: #FFFFFF;
+  --dark: #121111;
+  --main: #2C8F35;
+  --blue: #2D3F53;
+  --yellow: #CEAF6C;
+  --bg-light: #F3F8FF;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  font: 400 16px/1.2 HelveticaNeue;
+  color: var(--dark, $dark);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style-position: inside;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article>*+* {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+  }
+}
+
+.container {
+  max-width: 96%;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+  @media(min-width: 1920px) {
+    max-width: 1682px;
+  }
+  @media(max-width: 980px) {
+    max-width: unset;
+  }
+}
+
+input:not([type="radio"]):not([type="checkbox"]), textarea, select {
+  width: 100%;
+  padding: 18px;
+  border-radius: 20px;
+  border: 1px solid var(--blue, $blue);
+  color: var(--blue, $blue);
+  background-color: var(--light, $light);
+  font: 500 1em/1 Inter;
+  &::placeholder {
+    color: rgba($color: #2D3F53, $alpha: 0.5);
+  }
+  &:focus {
+    outline: none;
+  }
+  @media (max-width: 767px) {
+    padding: 12px;
+    border-radius: 16px;
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: rgba($color: #2D3F53, $alpha: 0.5); 
+  background: url(../img/down-blue.svg) transparent no-repeat top 55% right 12px;
+  transition: color 0.3s ease-out;
+  option {
+    color: var(--blue, $blue);
+  }
+  &.placeholder {
+    color: rgba($color: #2D3F53, $alpha: 0.5);
+  }
+  &.normal {
+    color: var(--blue, $blue);
+  }
+}
+
+textarea {
+  resize: none;
+  height: 90px;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: max-content;
+  padding: 24px 50px;
+  border-radius: 36px;
+  border: 1px solid var(--yellow, $yellow);
+  color: var(--light, $light);
+  background-color: var(--yellow, $yellow);
+  font: 600 1em/1 Inter;
+  @include transition;
+  span {
+    position: relative;
+    z-index: 1;
+  }
+  &:hover:not(:disabled) {
+    cursor: pointer;
+  }
+  &:disabled {
+    opacity: 0.5;
+  }
+  &-pulse {
+    &:hover {
+      box-shadow: 0 0 0 18px transparent;
+      animation: pulse 1s;
+    }
+  }
+  &-circle {
+    width: 180px;
+    height: 180px;
+    padding: 20px;
+    border-radius: 100%;
+    background-color: var(--light, $light);
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(100% - 40px);
+      height: calc(100% - 40px);
+      border-radius: 100%;
+      background-color: var(--yellow, $yellow);
+      transition: width 0.3s ease-out, height 0.3s ease-out;
+    }
+    &:hover {
+      &::before {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    padding: 16px 24px;
+  }
+}
+
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 0 var(--yellow, $yellow);
+  }
+}
+
+@keyframes pulse-2 {
+  from {
+    box-shadow: 0 0 0 0 var(--blue, $blue);
+  }
+}
+
+h1 {
+  font: 700 60px/1 BebasNeue;
+  @media (max-width: 767px) {
+    font-size: 36px;
+  }
+}
+
+h2 {
+  font: 700 36px/1 BebasNeue;
+  @media (max-width: 767px) {
+    font-size: 34px;
+  }
+}
+
+h3 {
+  font: 700 26px/1 BebasNeue;
+}
+
+h4 {
+  font: 700 24px/1 BebasNeue;
+}
+
+h5 {
+  font: 700 22px/1 BebasNeue;
+}
+
+h6 {
+  font: 700 20px/1 BebasNeue;
+}

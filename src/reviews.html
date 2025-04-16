@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "Отзывы" })
+  <body>
+    @@include('html/header.html', { "class": "dark" })
+
+    <main class="main">
+      <section class="reviews-page section-pad section-hidden">
+        <div class="container">
+          <div class="reviews-page__container">
+            <div class="reviews-page__heading">
+              <h1 class="reviews-page__title title-sm blue up">Отзывы наших пациентов</h1>
+              <div class="reviews-page__arrows">
+                <div class="swiper-arrow reviews-page__prev button-pulse">
+                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.23906 13.5934L8.25156 20.752C8.575 21.0795 9.1 21.0842 9.42344 20.7567C9.74688 20.4292 9.75156 19.8975 9.42812 19.5699L3.81719 13.8402L24.1703 13.8402C24.6297 13.8402 25 13.4652 25 13C25 12.5348 24.6297 12.1598 24.1703 12.1598L3.81719 12.1598L9.42812 6.43007C9.75156 6.10252 9.74688 5.57085 9.42344 5.2433C9.1 4.91575 8.575 4.9205 8.25156 5.24805L1.23906 12.4066C0.920313 12.7342 0.920313 13.2658 1.23906 13.5934Z" fill="white"/>
+                  </svg>                    
+                </div>
+                <div class="swiper-arrow reviews-page__next button-pulse">
+                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24.7609 12.4066L17.7484 5.24805C17.425 4.9205 16.9 4.91575 16.5766 5.2433C16.2531 5.57085 16.2484 6.10252 16.5719 6.43007L22.1828 12.1598H1.82969C1.37031 12.1598 1 12.5348 1 13C1 13.4652 1.37031 13.8402 1.82969 13.8402H22.1828L16.5719 19.5699C16.2484 19.8975 16.2531 20.4292 16.5766 20.7567C16.9 21.0842 17.425 21.0795 17.7484 20.752L24.7609 13.5934C25.0797 13.2658 25.0797 12.7342 24.7609 12.4066Z" fill="white"/>
+                  </svg>                    
+                </div>
+              </div>
+            </div>
+            <div class="reviews-page__slider up">
+              <div class="swiper reviewsSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide reviews-page__card">
+                    <div class="reviews-page__img">
+                      <img src="@img/reviews-1.png" alt="">
+                      <a class="reviews-page__video" href="https://youtu.be/krDWc30PAGg?si=kjb0dXkXkY2nYLKn" data-fancybox>
+                        <div class="icon">
+                          <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 5.26795C12.3333 6.03775 12.3333 7.96225 11 8.73205L3.5 13.0622C2.16666 13.832 0.5 12.8697 0.5 11.3301L0.5 2.66987C0.5 1.13027 2.16667 0.168022 3.5 0.937822L11 5.26795Z" fill="#121111" fill-opacity="0.5"/>
+                          </svg>                            
+                        </div>
+                        <div class="reviews-page__box">
+                          <div class="reviews-page__doctor">Черникова Алла</div>
+                          <div class="reviews-page__position">Лечащий врач</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="reviews-page__info">
+                      <div class="reviews-page__top">
+                        <h4 class="reviews-page__caption">Елена Николаева</h4>
+                        <div class="reviews-page__position">Пациент</div>
+                      </div>
+                      <div class="reviews-page__txt">Но сторонники тоталитаризма в науке объективно рассмотрены соответствующими инстанциями. Господа, убеждённость некоторых оппонентов требует анализа благоприятных перспектив.</div>
+                      <a href="" class="reviews-page__link">
+                        <span>Посмотреть отзыв в 2ГИС</span>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M24.7609 12.4066L17.7484 5.24805C17.425 4.9205 16.9 4.91575 16.5766 5.2433C16.2531 5.57085 16.2484 6.10252 16.5719 6.43007L22.1828 12.1598H1.82969C1.37031 12.1598 1 12.5348 1 13C1 13.4652 1.37031 13.8402 1.82969 13.8402H22.1828L16.5719 19.5699C16.2484 19.8975 16.2531 20.4292 16.5766 20.7567C16.9 21.0842 17.425 21.0795 17.7484 20.752L24.7609 13.5934C25.0797 13.2658 25.0797 12.7342 24.7609 12.4066Z" fill="#121111"/>
+                        </svg>                      
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide reviews-page__card">
+                    <div class="reviews-page__img">
+                      <img src="@img/reviews-2.png" alt="">
+                      <a class="reviews-page__video" href="https://youtu.be/krDWc30PAGg?si=kjb0dXkXkY2nYLKn" data-fancybox>
+                        <div class="icon">
+                          <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 5.26795C12.3333 6.03775 12.3333 7.96225 11 8.73205L3.5 13.0622C2.16666 13.832 0.5 12.8697 0.5 11.3301L0.5 2.66987C0.5 1.13027 2.16667 0.168022 3.5 0.937822L11 5.26795Z" fill="#121111" fill-opacity="0.5"/>
+                          </svg>                            
+                        </div>
+                        <div class="reviews-page__box">
+                          <div class="reviews-page__doctor">Черникова Алла</div>
+                          <div class="reviews-page__position">Лечащий врач</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="reviews-page__info">
+                      <div class="reviews-page__top">
+                        <h4 class="reviews-page__caption">Данияр Орынсаров</h4>
+                        <div class="reviews-page__position">Пациент</div>
+                      </div>
+                      <div class="reviews-page__txt">Но сторонники тоталитаризма в науке объективно рассмотрены соответствующими инстанциями. Господа, убеждённость некоторых оппонентов требует анализа благоприятных перспектив.</div>
+                      <a href="" class="reviews-page__link">
+                        <span>Посмотреть отзыв в 2ГИС</span>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M24.7609 12.4066L17.7484 5.24805C17.425 4.9205 16.9 4.91575 16.5766 5.2433C16.2531 5.57085 16.2484 6.10252 16.5719 6.43007L22.1828 12.1598H1.82969C1.37031 12.1598 1 12.5348 1 13C1 13.4652 1.37031 13.8402 1.82969 13.8402H22.1828L16.5719 19.5699C16.2484 19.8975 16.2531 20.4292 16.5766 20.7567C16.9 21.0842 17.425 21.0795 17.7484 20.752L24.7609 13.5934C25.0797 13.2658 25.0797 12.7342 24.7609 12.4066Z" fill="#121111"/>
+                        </svg>                      
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide reviews-page__card">
+                    <div class="reviews-page__img">
+                      <img src="@img/reviews-1.png" alt="">
+                      <a class="reviews-page__video" href="https://youtu.be/krDWc30PAGg?si=kjb0dXkXkY2nYLKn" data-fancybox>
+                        <div class="icon">
+                          <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 5.26795C12.3333 6.03775 12.3333 7.96225 11 8.73205L3.5 13.0622C2.16666 13.832 0.5 12.8697 0.5 11.3301L0.5 2.66987C0.5 1.13027 2.16667 0.168022 3.5 0.937822L11 5.26795Z" fill="#121111" fill-opacity="0.5"/>
+                          </svg>                            
+                        </div>
+                        <div class="reviews-page__box">
+                          <div class="reviews-page__doctor">Черникова Алла</div>
+                          <div class="reviews-page__position">Лечащий врач</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="reviews-page__info">
+                      <div class="reviews-page__top">
+                        <h4 class="reviews-page__caption">Елена Николаева</h4>
+                        <div class="reviews-page__position">Пациент</div>
+                      </div>
+                      <div class="reviews-page__txt">Но сторонники тоталитаризма в науке объективно рассмотрены соответствующими инстанциями. Господа, убеждённость некоторых оппонентов требует анализа благоприятных перспектив.</div>
+                      <a href="" class="reviews-page__link">
+                        <span>Посмотреть отзыв в 2ГИС</span>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M24.7609 12.4066L17.7484 5.24805C17.425 4.9205 16.9 4.91575 16.5766 5.2433C16.2531 5.57085 16.2484 6.10252 16.5719 6.43007L22.1828 12.1598H1.82969C1.37031 12.1598 1 12.5348 1 13C1 13.4652 1.37031 13.8402 1.82969 13.8402H22.1828L16.5719 19.5699C16.2484 19.8975 16.2531 20.4292 16.5766 20.7567C16.9 21.0842 17.425 21.0795 17.7484 20.752L24.7609 13.5934C25.0797 13.2658 25.0797 12.7342 24.7609 12.4066Z" fill="#121111"/>
+                        </svg>                      
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide reviews-page__card">
+                    <div class="reviews-page__img">
+                      <img src="@img/reviews-2.png" alt="">
+                      <a class="reviews-page__video" href="https://youtu.be/krDWc30PAGg?si=kjb0dXkXkY2nYLKn" data-fancybox>
+                        <div class="icon">
+                          <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 5.26795C12.3333 6.03775 12.3333 7.96225 11 8.73205L3.5 13.0622C2.16666 13.832 0.5 12.8697 0.5 11.3301L0.5 2.66987C0.5 1.13027 2.16667 0.168022 3.5 0.937822L11 5.26795Z" fill="#121111" fill-opacity="0.5"/>
+                          </svg>                            
+                        </div>
+                        <div class="reviews-page__box">
+                          <div class="reviews-page__doctor">Черникова Алла</div>
+                          <div class="reviews-page__position">Лечащий врач</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="reviews-page__info">
+                      <div class="reviews-page__top">
+                        <h4 class="reviews-page__caption">Данияр Орынсаров</h4>
+                        <div class="reviews-page__position">Пациент</div>
+                      </div>
+                      <div class="reviews-page__txt">Но сторонники тоталитаризма в науке объективно рассмотрены соответствующими инстанциями. Господа, убеждённость некоторых оппонентов требует анализа благоприятных перспектив.</div>
+                      <a href="" class="reviews-page__link">
+                        <span>Посмотреть отзыв в 2ГИС</span>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M24.7609 12.4066L17.7484 5.24805C17.425 4.9205 16.9 4.91575 16.5766 5.2433C16.2531 5.57085 16.2484 6.10252 16.5719 6.43007L22.1828 12.1598H1.82969C1.37031 12.1598 1 12.5348 1 13C1 13.4652 1.37031 13.8402 1.82969 13.8402H22.1828L16.5719 19.5699C16.2484 19.8975 16.2531 20.4292 16.5766 20.7567C16.9 21.0842 17.425 21.0795 17.7484 20.752L24.7609 13.5934C25.0797 13.2658 25.0797 12.7342 24.7609 12.4066Z" fill="#121111"/>
+                        </svg>                      
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/modal.html')
+    @@include('html/footer.html') 
+    @@include('html/foot.html')
+  </body>
+</html>
