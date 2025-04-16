@@ -439,8 +439,46 @@
     @@include('html/footer.html') 
 
     <!-- script только на главной -->
-    <script>window['instawall47545']={"token":"QGWHKAnfAKZNATNkFrn1EktsebRvhI/2S9eu4rwmHKTNzvFyKVkYG9priXlT5f1q3yUiBcVdeRt9oBBAhy7avogoupAYzFovvBygglxYlpJ9uVPb/0Q2V57cNQud5PGqN4Zf8/i8hPIWAuXNM3Iu","root_tagid":"instawall-root47545","card_padding":"18","card_border_radius":"20","card_count":"4","layout_max_width":"1650","count_post":"12","header_text_size":"20","header_text_color":"#000000","header_logo_size":"50","header_button_text":"Подписаться","header_button_text_size":"12","header_button_text_color":"#ffffff","header_button_background_color":"#0095f6","hide_groupname":"1","hide_text":"0","hide_shadow":"0","show_header":"0","show_header_logo":"1","show_header_button":"1"};</script>
-    <script>(function(d, s, id){ var js, dfjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.setAttribute("data-scriptid", "47545"); js.src = "https://socactive.com/widgets/instawall/i.js?id=47545&r="+Math.random(); dfjs.parentNode.insertBefore(js, dfjs); }(document, "script", "instawall-export47545"));</script>
+    <script>
+      (function() {
+        const isMobile = window.innerWidth <= 768;
+      
+        window['instawall47545'] = {
+          token: "QGWHKAnfAKZNATNkFrn1EktsebRvhI/2S9eu4rwmHKTNzvFyKVkYG9priXlT5f1q3yUiBcVdeRt9oBBAhy7avogoupAYzFovvBygglxYlpJ9uVPb/0Q2V57cNQud5PGqN4Zf8/i8hPIWAuXNM3Iu",
+          root_tagid: "instawall-root47545",
+          card_padding: isMobile ? "16" : "18",
+          card_border_radius: isMobile ? "10" : "20",
+          card_count: isMobile ? "2" : "4",
+          layout_max_width: isMobile ? "100%" : "1650",
+          count_post: isMobile ? "6" : "8",
+          header_text_size: isMobile ? "16" : "20",
+          header_text_color: "#121111",
+          header_logo_size: isMobile ? "40" : "50",
+          header_button_text: "Подписаться",
+          header_button_text_size: isMobile ? "10" : "12",
+          header_button_text_color: "#ffffff",
+          header_button_background_color: "#2D3F53",
+          hide_groupname: "1",
+          hide_text: "0",
+          hide_shadow: "0",
+          show_header: "0",
+          show_header_logo: "1",
+          show_header_button: "1"
+        };
+      })();
+      </script>
+      
+      <script>
+      (function(d, s, id) {
+        var js, dfjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.setAttribute("data-scriptid", "47545");
+        js.src = "https://socactive.com/widgets/instawall/i.js?id=47545&r=" + Math.random();
+        dfjs.parentNode.insertBefore(js, dfjs);
+      }(document, "script", "instawall-export47545"));
+      </script>
     @@include('html/foot.html')
   </body>
 </html>
