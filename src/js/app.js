@@ -386,6 +386,13 @@ window.addEventListener("load", function () {
 
   });
 
+  // AOS
+
+  AOS.init({
+    duration: 1200,
+    offset: 0
+  });
+
   window.addEventListener("scroll", () => {
     if (menu.classList.contains("open")) {
       link.classList.remove("active");
