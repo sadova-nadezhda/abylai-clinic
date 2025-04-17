@@ -239,8 +239,23 @@ h1 {
 h2 {
   font: 700 36px/1 BebasNeue;
   a {
+    position: relative;
+    display: block;
+    width: max-content;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      height: 2px;
+      width: 0;
+      background-color: var(--blue, $blue);
+      transition: width 0.3s ease-out;
+    }
     &:hover {
-      text-decoration: underline;
+      &::before {
+        width: 100%;
+      }
     }
   }
   @media (max-width: 767px) {
