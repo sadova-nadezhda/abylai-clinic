@@ -238,6 +238,11 @@ h1 {
 
 h2 {
   font: 700 36px/1 BebasNeue;
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
   @media (max-width: 767px) {
     font-size: 34px;
   }
