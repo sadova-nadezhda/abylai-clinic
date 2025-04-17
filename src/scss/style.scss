@@ -532,7 +532,6 @@
 }
 
 .services {
-  padding: 64px 0;
   &__container {
     padding: 26px 44px;
     border-radius: 36px;
@@ -841,6 +840,7 @@
 }
 
 .about {
+  padding: 64px 0;
   &__wrap {
     display: grid;
     grid-template-columns: 33% 58%;
