@@ -423,7 +423,9 @@
       color: var(--light, $light);
       overflow: hidden;
       @media (max-width: 767px) {
-        min-height: calc(70vh - 16px);
+        min-height: calc(80vh - 16px);
+        padding: 64px 26px;
+        border-radius: 20px;
       }
     }
     &__img {
@@ -516,6 +518,7 @@
     }
     @media(max-width: 767px) {
       min-height: 280px;
+      border-radius: 20px;
     }
   }
   &__title {
@@ -535,8 +538,12 @@
     border-radius: 36px;
     color: var(--light, $light);
     background-color: var(--blue, $blue);
-    @media (max-width: 767px) {
+    @media (max-width: 980px) {
       padding: 36px 26px;
+    }
+    @media (max-width: 767px) {
+      padding: 26px 16px;
+      border-radius: 20px;
     }
   }
   &__cards {
@@ -585,14 +592,14 @@
       border-radius: 20px;
       transition: background-color 0.3s ease-out;
       &:hover {
-        background-color: var(--yellow, $yellow);
+        @media(min-width: 768px) {
+          background-color: var(--yellow, $yellow);
+        }
       }
       @media(max-width: 767px) {
-        display: grid;
-        grid-template-columns: 58px 1fr;
-        row-gap: 16px;
-        column-gap: 20px;
-        padding: 16px;
+        flex-direction: row;
+        gap: 20px;
+        padding: 0;
       }
     }
     &__img {
@@ -608,9 +615,20 @@
       }
       @media(max-width: 767px) {
         grid-row: span 2;
+        min-width: 58px;
         width: 58px;
         height: 58px;
         padding: 16px;
+      }
+    }
+    &__group {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      @media(max-width: 767px) {
+        gap: 12px;
+        flex-grow: 1;
+        width: calc(100% - 78px);
       }
     }
     &__caption {
@@ -640,7 +658,7 @@
     &__card {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 22px;
       padding: 26px;
       border-radius: 20px;
       color: var(--light, $light);
@@ -650,10 +668,8 @@
         background-color: var(--yellow, $yellow);
       }
       @media(max-width: 767px) {
-        display: grid;
-        grid-template-columns: 58px 1fr;
-        row-gap: 16px;
-        column-gap: 20px;
+        flex-direction: row;
+        gap: 20px;
         padding: 16px;
       }
     }
@@ -1385,6 +1401,7 @@
     background-color: var(--blue, $blue);
     @media (max-width: 767px) {
       padding: 26px;
+      border-radius: 20px;
       overflow: hidden;
     }
   }
@@ -1477,6 +1494,7 @@
     transition: color 0.3s ease-out, background-color 0.3s ease-out, transform 0.3s ease-out;
     @media (max-width: 767px) {
       height: auto;
+      padding: 26px 16px;
       border-radius: 0 0 20px 20px;
       color: var(--light, $light);
       background-color: var(--blue, $blue);
@@ -1783,7 +1801,8 @@
     background: url(../img/stock.png) center / cover no-repeat;
     @media (max-width: 767px) {
       min-height: unset;
-      padding: 26px;
+      padding: 26px 16px;
+      border-radius: 20px;
     }
   }
   &__card {
@@ -1862,6 +1881,7 @@
       }
       @media (max-width: 767px) {
         grid-template-columns: 1fr;
+        border-radius: 20px;
       }
     }
     &__info {
@@ -2203,6 +2223,7 @@
     @media (max-width: 767px) {
       gap: 26px;
       padding: 36px 16px;
+      border-radius: 20px;
     }
   }
   &__box {
