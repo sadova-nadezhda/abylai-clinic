@@ -1439,6 +1439,7 @@
   }
   &__card {
     position: relative;
+    display: block;
     height: 370px;
     img {
       position: absolute;
@@ -1880,7 +1881,8 @@
         }
       }
       @media (max-width: 767px) {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         border-radius: 20px;
       }
     }
@@ -1891,10 +1893,15 @@
       padding: 36px;
       color: var(--light, $light);
       background-color: var(--blue, $blue);
-      @media (max-width: 767px) {
-        order: 1;
+      @media (max-width: 980px) {
         gap: 26px;
         padding: 26px;
+      }
+      @media (max-width: 767px) {
+        flex-grow: 1;
+        order: 1;
+        gap: 16px;
+        padding: 16px;
       }
     }
     &__caption {
@@ -1943,7 +1950,7 @@
         transition: transform 0.3s ease-out;
       }
       @media (max-width: 767px) {
-        height: 254px;
+        height: 220px;
       }
     }
     @media (max-width: 767px) {
@@ -2021,8 +2028,10 @@
     }
   }
   &__card {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     .stock-page__info {
+      flex-grow: 1;
       order: 1;
       gap: 26px;
       padding: 26px;

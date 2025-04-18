@@ -237,11 +237,13 @@ h1 {
 }
 
 h2 {
+  display: flex;
+  align-items: center;
   font: 700 36px/1 BebasNeue;
   a {
     position: relative;
     display: block;
-    width: max-content;
+    width: auto;
     &::before {
       content: '';
       position: absolute;

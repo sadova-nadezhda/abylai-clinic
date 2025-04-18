@@ -200,6 +200,7 @@ window.addEventListener("load", function () {
     slidesPerView: 1,
     spaceBetween: 18,
     loop: true,
+    autoHeight: true,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
