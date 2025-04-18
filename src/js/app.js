@@ -93,6 +93,7 @@ window.addEventListener("load", function () {
     slidesPerView: 1,
     spaceBetween: 18,
     loop: true,
+    autoHeight: true,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
@@ -105,12 +106,15 @@ window.addEventListener("load", function () {
     breakpoints: {
       768: {
         slidesPerView: 2,
+        autoHeight: true,
       },
       1024: {
         slidesPerView: 3,
+        autoHeight: true,
       },
       1300: {
         slidesPerView: 4,
+        autoHeight: false,
       },
     }
   });
@@ -213,6 +217,7 @@ window.addEventListener("load", function () {
     breakpoints: {
       1200: {
         slidesPerView: 2,
+        autoHeight: false,
       },
     }
   });
